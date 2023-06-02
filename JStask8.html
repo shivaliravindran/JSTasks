@@ -1,0 +1,63 @@
+<html>
+<head>
+  <style>
+    .image-container {
+      position: relative;
+    }
+    
+    .image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      animation-name: slideAnimation;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    
+    @keyframes slideAnimation {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(50% - 200px); 
+      }
+    }
+    
+    .button-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body style="margin-left: 100px;;">
+    <div class="container">
+  <div class="image-container">
+    <img class="image" src="train.png" alt="Moving Image">
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <center><div class="button-container">
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+  </div>
+</div></center>
+  <script>
+    const startBtn = document.getElementById("startBtn");
+    const stopBtn = document.getElementById("stopBtn");
+    const image = document.querySelector(".image");
+    
+    let animation;
+    
+    startBtn.addEventListener("click", startAnimation);
+    stopBtn.addEventListener("click", stopAnimation);
+    
+    function startAnimation() {
+      image.style.animationPlayState = "running";
+    }
+    
+    function stopAnimation() {
+      image.style.animationPlayState = "paused";
+    }
+  </script>
+</body>
+</html>

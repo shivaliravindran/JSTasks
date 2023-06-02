@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            .container {
+                padding-top: 50px;
+                padding: 40px;
+                width: 400px;
+                padding-top: 10px;
+                margin: 20px austo;
+                background-color: #70143c;
+                }
+            
+            .inputs {
+                padding: 3px 10px;
+                border: 2px solid #e2e2e2;
+                width: 200px;
+                }
+            .inputselect{
+                padding: 3px 10px;
+                border: 2px solid #e2e2e2;
+                width: 10px;
+            }
+
+            .input-field {
+                    display: flex;
+                    margin-bottom: 15px;
+                    margin-left: 30px;
+                    }
+    
+            .input-field2{
+                    margin-left: 197px;
+                }
+
+            .submit {
+                background: White;
+                padding: 9px 25px;
+                margin-right: 10px;
+                border: none;
+                width: 320px;
+                border-radius: 4px;
+                margin-left: 30px;
+                }
+            .maincont{
+                width: 700px;
+                padding-top: 40px;
+                background-color: #a01c54;
+                height: 460px;
+            }
+        </style>
+    </head>
+    <body><center>
+        <div class="maincont">
+        <div class="container">
+              <form>
+                  <div class="input-field">
+                    <label style="margin-right: 50px; color: white;">Name: </label>
+                    <input type="text" class="inputs" placeholder="your name">
+                  </div>
+                  <div class="input-field">
+                    <label style="margin-right: 50px; color: white;">Email: </label>
+                    <input type="email" class="inputs" placeholder="your email">
+                  </div>
+                  <div class="input-field">
+                    <label style="margin-right: 27px; color: white;">Password: </label>
+                    <input type="password" class="inputs" >
+                  </div>
+                  <div class="input-field">
+                    <label style="margin-right: 48px; color: white;">Phone: </label>
+                    <input type="text" class="inputs" >
+                  </div>
+                  <div style="color: white; margin-left: 30px;">
+                    <label style="margin-right: 35px; color: white;">Gender: </label>
+                    Male:<input type="radio" id="i1">
+                    Female:<input type="radio" id="i1">
+                    Other:<input type="radio" id="i1">
+                  </div><br>
+                  <div style="margin-left: 30px;">
+                    <label style="margin-right: 25px; color: white;">language: </label>
+                    <select class="inputselect" style="width: 145px">
+                        <option value="0">Select language</option>
+                        <option value="1">English</option>
+                        <option value="2">Tamil</option>
+                        <option value="3">Hindi</option>
+                      </select>
+                  </div><br>
+                  <div class="input-field">
+                    <label style="margin-right: 25px; color: white;">Zip Code: </label>
+                    <input type="text" class="inputs" >
+                  </div>
+                  <div class="input-field">
+                    <label style="margin-right: 45px; color: white;">About: </label>
+                    <textarea placeholder="write about yourself" style="padding: 3px 10px; border: 2px solid #e2e2e2; width: 200px;"></textarea>
+                  </div>
+              <div class="button">
+                <button type="submit" class="submit">Register </button>
+              </div>
+                </div>
+            </form>
+          </div>
+        </div>
+    </body>
+</html>

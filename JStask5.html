@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+        function reverse()
+        {
+            var x,y,z,temp=0;
+            y = parseInt(prompt("Enter a number: "));
+            z=y;
+            while(y>0)
+            {
+                x=y%10;
+                y=parseInt(y/10);
+                temp=temp*10+x;
+            }
+            document.write("The reverse of the number "  )
+            document.writeln(temp);
+        }           
+        </script>
+    </head>
+    <body>
+        <h1>Reverse</h1>
+            <p> Click on the check button and enter the number to be reversed in the alert box that follows</p>
+            <button onclick="reverse()">Check</button></br></br>
+    </body>
+</html>

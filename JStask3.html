@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <style>
+    .required {
+      border: 3px solid red;
+    }
+    .error-message {
+      color: red;
+    }
+    div{
+        display: inline-block;
+        color: red;
+    }
+  </style>
+    <script>
+        
+        function sub()
+        {
+            
+          var name = document.getElementById("name");
+          var email = document.getElementById("email");
+          var website = document.getElementById("website");
+          var message = document.getElementById("message");
+
+          if (name.value === "") {
+            name.style.border = "2px solid red";
+            document.getElementById("abc1").innerHTML = "This field is required.";
+          } else {
+            name.style.border = "none";
+          }
+    
+          if (email.value === "") {
+            email.style.border = "2px solid red";
+            document.getElementById("abc2").innerHTML = "A valid email address is required.";
+          } else {
+            email.style.border = "none";
+          }
+    
+          if (website.value === "") {
+            website.style.border = "2px solid red";
+            document.getElementById("abc3").innerHTML = "A valid url is required.";
+          } else {
+            website.style.border = "none";
+          }
+    
+          if (message.value === "") {
+            message.style.border = "2px solid red";
+            document.getElementById("abc4").innerHTML = "This field is required.";
+          } else {
+            message.style.border = "none";
+          }
+    
+        }
+      </script>
+</head>
+<body>
+  <p> <b>On submitting empty field, the border turns red</b></p>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><div id="abc1"></div>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <div id="abc2"></div>
+    <br><br>
+    <label for="website">Website:</label>
+    <input type="text" id="website" name="website">
+    <div id="abc3"></div>
+    <br><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+    <div id="abc4"></div>
+    <br><br>
+    <input id="i2" type="button" onClick="sub()" value="Submit">
+  </form>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script>
+      function addd()
+      {
+        const d = new Date();
+        document.getElementById("result1").innerHTML = d ;
+      }
+      function subtract()
+      {
+        const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        const d = new Date();
+        const a = d.getDate();
+        var b = month[d.getMonth()];
+        var c = d.getFullYear();
+	    document.getElementById("result2").innerHTML = a + "/" + b + "/"  + c;
+      }
+     </script>
+  </head>
+  <body>
+    <center><div style="border: 1px solid red; width:500px; height:200">
+      <form id="f1"><p>
+	    <input id="i2" type="button" onClick="addd()" value="show date">
+        <div id="result1"></div>
+	    <input id="i3" type="button" onClick="subtract()" value="show Time">
+      <div id="result2"></div>
+      </form>
+    </div>
+  </body>

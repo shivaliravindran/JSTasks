@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script>
+      function addd()
+      {
+        var x = document.getElementById("i1").value;
+        var y = document.getElementById("i2").value;
+        var val = x+y;
+	    document.getElementById("results").innerHTML = "The value after addition is "  + val;
+      }
+      function subtract()
+      {
+        var x = document.getElementById("i1").value;
+        var y = document.getElementById("i2").value;
+        var val = x-y;
+	    document.getElementById("results").innerHTML = "The value after subtraction is "  + val;
+      }
+      function multiply()
+      {
+        var x = document.getElementById("i1").value;
+        var y = document.getElementById("i2").value;
+        var val = x*y;
+	    document.getElementById("results").innerHTML = "The value after multiplication is "  + val;
+      }
+      function divide()
+      {
+        var x = document.getElementById("i1").value;
+        var y = document.getElementById("i2").value;
+        var val = x/y;
+	    document.getElementById("results").innerHTML = "The value after division is "  + val;
+      }
+     </script>
+  </head>
+  <body>
+    <center><div style="border: 1px solid red; width:500px; height:200">
+      <form id="f1"><p>
+        Enter number 1 :<input id="i1" type="text"><br><br>
+        Enter number 1 :<input id="i2" type="text"><br><br>
+	<input id="i2" type="button" onClick="addd()" value="add">
+	<input id="i3" type="button" onClick="subtract()" value="subtract">
+    <input id="i3" type="button" onClick="multiply()" value="multiply">
+    <input id="i3" type="button" onClick="divide()" value="divide"><br><br>
+    <div id="results"></div>
+      </form>
+    </div>
+  </body>

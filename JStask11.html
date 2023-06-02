@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form-container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f8f4c4, #e084b4);
+        }
+
+        b{
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+        }
+        
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="email"], textarea {
+            width: 50%;
+            
+        }
+        label{
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+        }
+        
+        input, textarea, select{
+            margin-left: 50px;
+        }
+
+        .form-container input[type="submit"] {
+            width: 100px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <b>First Name </b>
+            <input type="text"> <font color="red">POOR</font><br><br>
+            <b>Last Name </b>
+            <input type="text"> <font color="red">POOR</font><br><br>
+            <b>Email </b>
+            <input type="email"> <font color="red">POOR</font><br><br>
+            <b>Password </b>
+            <input type="password"> <font color="red">POOR</font><br><br>
+            <b>ReenterPassword </b>
+            <input type="password"> <font color="red">POOR OR MISMATCH</font><br><br>
+            <b>Gender</b>
+            <input type="radio"  value="Male">Male<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio"  value="Male">Female<br><br>
+            <b>Age </b>
+            <input type="text"> <font color="red">POOR</font><br><br>
+            <b>PhoneNumber</b>
+            <input type="text" id="phone" name="phone" required> <font color="red"> POOR</font>
+            <br><br>
+            <b>Address</b>
+            <textarea></textarea> <font color="red">POOR</font><br><br>
+            <b>State </b>
+            <input type="text"> <font color="red">POOR</font><br><br>
+            <b>Country </b>
+            <select>
+                <option value="choose your country">choose your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+            </select> <br><br>
+            <b><label>Languagesknown</label></b>
+            <input type="checkbox" id="i2" value="English">English
+            <input type="checkbox" id="i2" value="Kannada" style="margin-left: 10px;">Kannada
+            <input type="checkbox" id="i2" value="Hindi" style="margin-left: 10px;">Hindi
+            <input type="checkbox" id="i2" value="Telugu" style="margin-left: 10px;">Telugu<br><br>
+            <input type="checkbox" id="i3" style="margin-left: -1px;">Hereby I declare all the given details are true<br><br>
+            <p style="margin-left: 350px;">Log in to <a href="#">Ethnus</a> website.</p>
+            <center><input type="submit" value="REGISTER"></center>
+        </form>
+    </div>
+</body>
+</html>
+
