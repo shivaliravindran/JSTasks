@@ -1,0 +1,58 @@
+<html>
+    <p style="font-size: 40px;"><b>Output visible in the console</b></p>
+    <p>To view the console, right click and click on inspect. Move to the console to view the ouput</p>
+    <script>
+        const array = [10, 20, 30, 40, 50, 60];
+
+// Concat method
+const concatArray = array.concat([70, 80, 90]);
+console.log("Concat:", concatArray);
+
+// CopyWithin method
+const copyWithinArray = array.copyWithin(0, 2);
+console.log("CopyWithin:", copyWithinArray);
+
+// Map method
+const mapArray = array.map((element) => element * 2);
+console.log("Map:", mapArray);
+
+// Some method
+const isSome = array.some((element) => element > 50);
+console.log("Some:", isSome);
+
+// Filter method
+const filterArray = array.filter((element) => element % 20 === 0);
+console.log("Filter:", filterArray);
+
+// Find method
+const findElement = array.find((element) => element > 30);
+console.log("Find:", findElement);
+
+// FindIndex method
+const findIndex = array.findIndex((element) => element === 40);
+console.log("FindIndex:", findIndex);
+
+// IndexOf method
+const indexOfElement = array.indexOf(20);
+console.log("IndexOf:", indexOfElement);
+
+// LastIndexOf method
+const lastIndexOfElement = array.lastIndexOf(40);
+console.log("LastIndexOf:", lastIndexOfElement);
+
+// Push method
+array.push(70);
+console.log("Push:", array);
+
+// Pop method
+const poppedElement = array.pop();
+console.log("Pop:", poppedElement);
+console.log("Array after Pop:", array);
+
+// Shift method
+const shiftedElement = array.shift();
+console.log("Shift:", shiftedElement);
+console.log("Array after Shift:", array);
+
+    </script>
+    </html>
